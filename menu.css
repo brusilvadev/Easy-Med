@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    overflow: hidden;
+}
+
+:root{
+    --light-blue: #1fa6f3;
+    --medium-blue:#0055f0;
+    --dark-blue: #0b2d6c;
+    --white: #ffffff;
+}
+
+.container{
+    width: 100%;
+    height: 700px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.left{
+    width: 50%;
+    background-color: var(--light-blue);   
+    
+}
+.left img{
+    width: 100%;
+    
+    
+}
+.right{
+    width: 50%;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.r-row1{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.r-row1 img{
+    width: 40%;
+}
+.r-row2{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    padding: 8px;
+}
+.r-row2 h1{
+    font-family: "League Spartan", sans-serif;
+    text-transform: uppercase;
+    font-size: 102px;
+    font-weight: 700;
+    color: var(--medium-blue);
+}
+.r-row2 h2{
+    font-family: "Anton", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 80px;
+    color: var(--dark-blue);
+}
+.r-row2 span{
+    text-transform: uppercase;
+    margin-bottom: 28px;
+}
+.r-row2 button{
+    width: 50%;
+    background-color: var(--medium-blue);
+    color: var(--white);
+    font-size: 40px;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 8px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.r-row2 button:hover{
+    background-color: #0145c2;
+    transition: all .5s;
+}
+
+@media screen and (max-width: 64rem) {
+    .container{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .left{
+        display: none;
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .right .r-row1{
+        justify-content: center;
+        margin-bottom: 110px;
+    }
+    .right .r-row2{
+        justify-content: center;
+        align-items: center;
+    }
+    .right .r-row2 h1{
+        font-size: 280px;
+    }
+    .right .r-row2 h2{
+        font-size: 180px;
+    }
+    .right .r-row2 span{
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .right .r-row2 button{
+        width: 100%;
+        font-size: 80px;
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 27rem) {
+    .container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .left{
+        display: none;
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .right .r-row1{
+        justify-content: center;
+        margin-top: 80px;
+        width: 100%;
+    }
+    .right .r-row1 img{
+        width: 80%;
+    }
+    .right .r-row2{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .right .r-row2 h1{
+        font-size: 80px;
+    }
+    .right .r-row2 h2{
+        font-size: 80px;
+    }
+    .right .r-row2 span{
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .right .r-row2 button{
+        width: 100%;
+        font-size: 40px;
+        padding: 8px;
+    }
+}
