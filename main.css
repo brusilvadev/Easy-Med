@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+:root{
+    --light-blue: #1fa6f3;
+    --medium-blue:#0055f0;
+    --dark-blue: #0b2d6c;
+    --white: #ffffff;
+}
+
+.container-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.container-card .card{
+    margin: 20px 0;
+    text-align: center;
+}
+
+.card-text{
+    margin: 0;
+}
+
+.btn-primary{
+    margin-top: 18px;
+}
+
+.highlight{
+    width: 100%;
+    text-align: center ;
+}
+.highlight h1{
+    color: var(--medium-blue);
+    font-weight: 600;
+}
