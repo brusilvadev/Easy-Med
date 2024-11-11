@@ -20,3 +20,12 @@
     font-size: 28px;
     margin-bottom: 40px;
 }
+
+footer{
+    width: 100%;
+    background-color: var(--dark-blue);
+    text-align: center;
+    padding: 8px;
+    color: var(--white);
+    cursor: default;
+}

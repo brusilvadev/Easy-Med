@@ -22,8 +22,10 @@
     flex-wrap: wrap;
 }
 .container-card .card{
-    margin: 20px 0;
+    margin: 20px;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 .card-text{
